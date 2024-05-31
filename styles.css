@@ -1,9 +1,29 @@
 body {
-  font-family: Calibri, sans-serif;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
 #container {
   text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-image,
+.right-image {
+  height: 150px;
+  width: auto;
+  margin: 0 10px;
+}
+
+/* Remove background from the second image */
+.right-image {
+  background: none;
 }
 
 table {
@@ -14,20 +34,54 @@ table {
 
 colgroup,
 tbody {
-  border: solid medium;
+  border: solid 4px lime;
+  /* Brighter green and increased thickness */
 }
 
 td {
-  border: solid thin;
+  border: solid 2px lime;
+  /* Brighter green and increased thickness */
   height: 1.4em;
   width: 1.4em;
   text-align: center;
   padding: 0;
+  color: white;
+}
+
+/* Highlighting 3x3 subgrids */
+td:nth-child(3n+1) {
+  border-left: solid 4px lime;
+  /* Increased thickness */
+}
+
+td:nth-child(3n) {
+  border-right: solid 4px lime;
+  /* Increased thickness */
+}
+
+tr:nth-child(3n+1) td {
+  border-top: solid 4px lime;
+  /* Increased thickness */
+}
+
+tr:nth-child(3n) td {
+  border-bottom: solid 4px lime;
+  /* Increased thickness */
 }
 
 button {
   margin-top: 15px;
   font-size: 1.5em;
+  color: black;
+  background-color: white;
+  border: 2px solid lime;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lime;
+  color: black;
 }
 
 .padd {
