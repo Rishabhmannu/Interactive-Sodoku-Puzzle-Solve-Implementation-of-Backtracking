@@ -8,8 +8,10 @@
 </head>
 <body>
   <div id="container">
-    <img src="images/sudoku-logo.png" class="top-image">
-    <img src="images/sudoku-clipart.jpeg" class="right-image">
+    <div class="image-container">
+      <img src="images/sudoku-logo.png" class="top-image">
+      <img src="images/sudoku-clipart.jpeg" class="right-image">
+    </div>
     <h1 class="padd">Sudoku Solver</h1>
     <table id="sudoku-board">
       <colgroup><col><col><col></colgroup>
@@ -27,10 +29,8 @@
         <tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
       </tbody>
     </table>
-    <div>
-      <button id="solve-button">Solve </button>
-    </div>
-    <div>
+    <div class="button-container">
+      <button id="solve-button">Solve</button>
       <button id="clear-button">Clear board</button>
     </div>
   </div>

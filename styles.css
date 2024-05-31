@@ -70,20 +70,39 @@ tr:nth-child(3n) td {
 }
 
 button {
-  margin-top: 15px;
   font-size: 1.5em;
-  color: black;
-  background-color: white;
-  border: 2px solid lime;
-  padding: 10px 20px;
+  color: white;
+  background-color: #800080;
+  /* Vibrant purple */
+  border: 2px solid #800080;
+  /* Same color as background for seamless look */
+  border-radius: 10px;
+  /* Slightly rounded borders */
+  padding: 15px 30px;
+  /* Increased size */
+  margin: 20px;
+  /* Space between buttons */
   cursor: pointer;
+  /* Pointer cursor */
+  font-weight: bold;
+  /* Bold text */
 }
 
 button:hover {
-  background-color: lime;
-  color: black;
+  background-color: white;
+  color: #800080;
+  /* Purple text on hover */
+  border: 2px solid #800080;
+  /* Ensure border stays purple on hover */
 }
 
 .padd {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+}
+
+/* Ensure buttons are side by side */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
