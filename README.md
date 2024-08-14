@@ -12,7 +12,7 @@ An interactive web-based Sudoku solver built with HTML, CSS, and JavaScript. Thi
 
 ## Demo
 
-![Sudoku Solver Demo](sudoku_solver.png) <!-- Add a gif or image showing the solver in action -->
+![Sudoku Solver Demo](sudoku_solve.png) <!-- Add a gif or image showing the solver in action -->
 
 ## How to Run
 
